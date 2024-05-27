@@ -52,7 +52,8 @@ El repositorio está organizado de la siguiente manera:
 - `frontend/`: Contiene las soluciones a los desafíos implementadas en HTML, CSS y JavaScript.
 - `README.md`: Este archivo, que proporciona una descripción general del repositorio.
 
-## Licencia
+## License
 
-Este proyecto está bajo la licencia [MIT](LICENSE).
+This project is licensed under the [Apache License, Version 2.0](LICENSE).
+
 
