@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robo Rover</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/robot-ico.png">
+  </head>
+  <body>
+    <div id="container">
+      <img id="rover-robot" src="images/robot.png" alt="robot-rover" title="Rover Robot"/>
+    </div>    
+    <div class="directional-buttons">
+      <img id="ArrowUp-button" class="move-buttons" src="images/ArrowUp.png"  onclick="moveForward()"/>
+      <div class="horizontal-buttons">
+         <img id="RotateLeft-button" class="move-buttons" src="images/rotate_right.png" onclick="rotateLeft()"/>
+         <img id="ArrowDown-button" class="move-buttons" src="images/ArrowUp.png" onclick="moveBack()"/>
+         <img id="RotateRigth-button" class="move-buttons" src="images/rotate_right.png" onclick="rotateRight()"/>
+      </div>
+    </div>
+    <div id="commands-container">
+      <div>
+        <textarea name="commans" id="commans-area" readonly></textarea> 
+      </div>
+      <div class="commands-buttons">
+        <input id="commansL" class="commanButton" type="button" value="L" onclick="clickCommandsL()"/>
+        <input id="commansM" class="commanButton" type="button" value="M" onclick="clickCommandsM()"/>
+        <input id="commansR" class="commanButton" type="button" value="R" onclick="clickCommandsR()"/>
+      </div>
+      <div class="sub-commands">
+        <input id="clear-All-Commands" type="button" value="clearAll" onclick="clearAllCommands()"/>
+        <input id="execute-Commands" type="button" value="Execute" onclick="executeCommands()"/>
+        <input id="undo-Last-Command" type="button" value="undo" onclick="undoLastCommand()"/>
+      </div>
+    </div>
+    <script src="js/controller.js"></script>
+    <script src="js/commans.js"></script>      
+  </body>
+</html>

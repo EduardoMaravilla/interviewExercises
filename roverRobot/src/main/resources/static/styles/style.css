@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url("/images/map_mars.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#rover-robot {
+  position: absolute;
+  width: 100px;
+  top: 1px;
+  left: 1px;  
+  transition: all 500ms linear;
+}
+
+.obstacle-robot {
+  position: absolute;
+  width: 80px;
+  margin: 10px;
+}
+
+.directional-buttons {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.move-buttons {
+  width: 50px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.horizontal-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+#ArrowUp-button,
+#ArrowDown-button,
+#RotateLeft-button,
+#RotateRigth-button {
+  background-color: hsla(0, 100%, 100%, 0.4);
+  border-radius: 10px;
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+#ArrowDown-button {
+  transform: rotate(180deg);
+  box-shadow: -5px -5px 0 rgba(0, 0, 0, 0.5);
+}
+
+#RotateLeft-button {
+  transform: scaleX(-1);
+  box-shadow: -5px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+#ArrowUp-button:active,
+#ArrowDown-button:active,
+#RotateLeft-button:active,
+#RotateRigth-button:active {
+  box-shadow: none;
+}
+
+#ArrowUp-button:hover,
+#ArrowDown-button:hover,
+#RotateLeft-button:hover,
+#RotateRigth-button:hover {
+  background-color: hsla(0, 100%, 100%, 0.6);
+}
+
+#commands-container {
+  position: absolute;
+  bottom: 10px;
+  left: 100%;
+  transform: translateX(-100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsla(0, 100%, 100%, 0.6);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+textarea {
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.commands-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.commanButton{
+  width: 50px;
+  cursor: pointer;
+  margin: 5px;
+}
