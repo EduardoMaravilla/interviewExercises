@@ -1,6 +1,6 @@
 # Code Challenges Repository
 
-This repository contains solutions to programming challenges for interviews. The challenges are based on exercises from the [Codurance Katas](https://www.codurance.com/es/katas) page and are solved using Java (Spring Boot) for the backend, and Angular, HTML, CSS, and JavaScript for the frontend.
+This repository contains solutions to programming challenges for interviews. The challenges are based on exercises from the [Codurance Katas](https://www.codurance.com/es/katas) page and are solved using Java (Spring Boot) for the backend, and HTML, CSS, and JavaScript for the frontend.
 
 ## Description
 
@@ -27,7 +27,7 @@ The repository is organized as follows:
 
 # Code Challenges Repository
 
-Este repositorio contiene soluciones a desafíos de programación para entrevistas. Los desafíos están basados en ejercicios de la página [Codurance Katas](https://www.codurance.com/es/katas) y están resueltos utilizando Java (Spring Boot) para el backend, y Angular, HTML, CSS, y JavaScript para el frontend.
+Este repositorio contiene soluciones a desafíos de programación para entrevistas. Los desafíos están basados en ejercicios de la página [Codurance Katas](https://www.codurance.com/es/katas) y están resueltos utilizando Java (Spring Boot) para el backend, y HTML, CSS, y JavaScript para el frontend.
 
 ## Descripción
 
