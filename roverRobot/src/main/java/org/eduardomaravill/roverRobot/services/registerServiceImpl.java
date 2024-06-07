@@ -1,5 +1,6 @@
 package org.eduardomaravill.roverRobot.services;
 
+import jakarta.transaction.Transactional;
 import org.eduardomaravill.roverRobot.models.RegisterMoveRover;
 import org.eduardomaravill.roverRobot.repository.IRegisterRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
+@Transactional
 public class registerServiceImpl implements IRegisterService{
 
     @Autowired
