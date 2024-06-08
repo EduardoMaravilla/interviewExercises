@@ -62,7 +62,7 @@ footer {
     box-sizing: border-box;
     margin-right: 10px;
 }
-#guess-button {
+#guess-button,#reset-button {
     margin-top: 2%;
     padding: 10px 20px;
     font-size: 16px;
@@ -73,6 +73,10 @@ footer {
     cursor: pointer;
 }
 #guess-button:hover {
+    background-color: #0056b3;
+}
+
+#reset-button:hover {
     background-color: #0056b3;
 }
 

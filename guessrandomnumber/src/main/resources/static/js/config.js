@@ -48,3 +48,11 @@ function checkTheNumber() {
 function isRandomNumber(number) {
   return number === randomN;
 }
+
+function resetGame() {
+  location.reload();
+}
+
+async function sleep(t){
+  await new Promise(resolve => setTimeout(resolve, t));
+}  
