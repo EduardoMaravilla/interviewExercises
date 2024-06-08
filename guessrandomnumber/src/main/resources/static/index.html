@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/dice.png" type="image/png" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Guess Number</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="guess-header">Guess The Number</h1>
+    </header>
+    <main>
+      <div class="guessed_number" id="guessed-number-container">
+        <h2 id="guessed-number-win">
+          Congratulations! The number is: <strong id="number-guess"></strong>
+        </h2>
+      </div>
+      <div class="container">
+        <div class="title-container">
+          <h3 id="title">Guess The Number</h3>
+          <p id="tip">Can you guess the number between 1 and 10?</p>
+          <!-- Added a guiding tip -->
+          <p id="tip-guess-id" class="tip-guess"></p>        
+        </div>
+        <div class="enter-response">
+          <label for="guess-input"
+            >Enter Number: </label
+          >
+          <!-- Hidden label for accessibility -->
+          <input
+            type="text"
+            id="guess-input"
+            aria-label="Enter Your Guess"
+          />
+          <button id="guess-button" onclick="checkTheNumber()">Guess</button>
+        </div>
+      </div>
+      <div class="guessed_number_fail" id="guessed-number-container-fail">
+        <h2 id="guessed-number-fail">
+          Try again! The number is: <strong id="number-guess-fail"></strong>
+        </h2>
+      </div>
+    </main>
+    <footer>
+      &copy; 2024 Guess The Number Game
+    </footer>
+    <script src="/js/config.js"></script>
+  </body>
+</html>

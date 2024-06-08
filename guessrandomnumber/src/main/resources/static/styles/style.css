@@ -1,0 +1,106 @@
+body {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #007bff;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+footer {
+        position:absolute;
+        text-align: center;
+        align-items: center;        
+        width: 100%;
+        height: 4%;
+        background-color: #007bff;
+        color: #ffffff;
+        bottom: 0;
+        padding-top: 2%;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+.title-container h3 {    
+    margin: 0 0 10px;
+}
+.enter-response {
+    margin-top: 20px;
+}
+#guess-input {
+    padding: 10px;
+    font-size: 16px;
+    width: 70%;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+#guess-button {
+    margin-top: 2%;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#guess-button:hover {
+    background-color: #0056b3;
+}
+
+.tip {
+    display: none;
+    background-color: #3c763d;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+
+.guessed_number {
+    display: none;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+    border-radius: 5px;
+}
+
+.guessed_number_fail {
+    display: none;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #a53117;
+    color: white;
+    border: 1px solid #d6e9c6;
+    border-radius: 5px;
+}
