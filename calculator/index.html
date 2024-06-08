@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="images/calculator.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <table class="table">
+      <caption class="title">
+        Calculator
+      </caption>
+      <tr>
+        <td colspan="4"><input class="text" type="text" id="display" readonly/></td>
+      </tr>
+      <tr>
+        <td><input class="button" type="button" value="C" onclick="eraseDisplay()" /></td>
+        <td><input class="button" type="button" value="CE" onclick="clearDisplay()" /></td>
+        <td><input class="button" type="button" value="%" onclick="addValue('%')" /></td>
+        <td><input class="button" type="button" value="/" onclick="addValue('/')" /></td>
+      </tr>
+      <tr>
+        <td><input class="button" type="button" value="7" onclick="addValue('7')" /></td>
+        <td><input class="button" type="button" value="8" onclick="addValue('8')" /></td>
+        <td><input class="button" type="button" value="9" onclick="addValue('9')" /></td>
+        <td><input class="button" type="button" value="*" onclick="addValue('*')" /></td>
+      </tr>
+      <tr>
+        <td><input class="button" type="button" value="4" onclick="addValue('4')" /></td>
+        <td><input class="button" type="button" value="5" onclick="addValue('5')" /></td>
+        <td><input class="button" type="button" value="6" onclick="addValue('6')" /></td>
+        <td><input class="button" type="button" value="-" onclick="addValue('-')" /></td>
+      </tr>
+      <tr>
+        <td><input class="button" type="button" value="1" onclick="addValue('1')" /></td>
+        <td><input class="button" type="button" value="2" onclick="addValue('2')" /></td>
+        <td><input class="button" type="button" value="3" onclick="addValue('3')" /></td>
+        <td><input class="button" type="button" value="+" onclick="addValue('+')" /></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input class="button" type="button" value="0" onclick="addValue('0')" /></td>
+        <td><input class="button" type="button" value="." onclick="addValue('.')" /></td>
+        <td><input class="button" type="button" value="=" onclick="calculate()" /></td>
+      </tr>
+    </table>
+    <script src="js/controller.js"></script>
+  </body>
+</html>
